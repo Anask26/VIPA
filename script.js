@@ -28,3 +28,35 @@ function updatePrice(size, price) {
     }
   });
 }
+
+// Scroll Reveal Animation
+document.addEventListener('DOMContentLoaded', function() {
+  // Create intersection observer
+  const observerOptions = {
+    threshold: 0.1,
+    rootMargin: '0px 0px -50px 0px'
+  };
+
+  const observer = new IntersectionObserver(function(entries) {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('revealed');
+      }
+    });
+  }, observerOptions);
+
+  // Observe all scroll-reveal elements
+  const revealElements = document.querySelectorAll('.scroll-reveal, .scroll-reveal-left, .scroll-reveal-right, .scroll-fade, .scroll-reveal-stagger');
+  revealElements.forEach(el => {
+    observer.observe(el);
+  });
+
+  // Stagger animation for grid items
+  const staggerContainers = document.querySelectorAll('.stagger-container');
+  staggerContainers.forEach(container => {
+    const items = container.querySelectorAll('.scroll-reveal-stagger');
+    items.forEach((item, index) => {
+      item.style.transitionDelay = `${index * 0.1}s`;
+    });
+  });
+});
