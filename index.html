@@ -5,57 +5,86 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://unpkg.com/phosphor-icons@1.4.2/src/css/icons.css">
   <link rel="stylesheet" href="style.css">
-  <title>VIPA Health Mix</title>
+  <title>Document</title>
 </head>
 <body>
-
-
-  <!-- NAVBAR -->
-  <header>
-    <div class="container nav-inner">
-      <div class="brand">
-        <span class="brand-name">VIPA</span>
-        <span class="brand-tag">Health Mix</span>
-      </div>
-
-      <nav class="nav-links">
-        <a href="#benefits">Benefits</a>
-        <a href="#ingredients">Ingredients</a>
-        <a href="#recipes">Recipes</a>
-        <a href="#product">Product Info</a>
-        <a href="#contact">Contact</a>
-      </nav>
-
-      <a href="#order" class="nav-cta">Order Now</a>
-    </div>
-  </header>
-  <!--=++= NAVBAR ENDS =++=-->
-
-  <!--=++= HERO SECTION =++=-->
-  <div>
-    <div class="flex-1">
-      <div class="hero-inner">
-        <h1 class="hero-name">VIPA Health Mix</h1>
-        <h3 class="hero-dis">One tumbler a day,health and strength grow!</h3>
-        <h5 class="hero-dis-tam">ஒரு டம்ளர் ஒரு நாள், ஆரோக்கியமும் வலிமையும் வளரும்!</h5>
-        <p class="hero-ing">Premium blend of 10 natural ingredients including Badam, Cashew, Wheat, and Ragi. Rich in essential nutrients for your daily health needs.</p>
-      </div>
-      <div class="hero-img">
-        <img alt="" src="pictures/vipa_pack.png">
-      </div>
-    </div>
-    <div class="dots-to-connect">
-      <div class="flex-2">
-        <span class="green-dot">&#x25CF </span>Made in India
-        <span class="yellow-dot">&#x25CF</span> 100% Natural
-        <span class="green-dot">&#x25CF </span>No Preservatives
-      </div>
-    </div>
-  </div>
   
-  <!--=++= HERO SECTION ENDS HERE =++=-->
-
-  <!--=++= BENEFITS SECTION =++=-->
+<!--==========TASK BAR/NAV BAR============-->
+  <nav>
+    <ul class="sidebar">
+      <li class="hamburger" onclick="hideSidebar()"><a href="#"><svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><line x1='18' y1='6' x2='6' y2='18'/><line x1='6' y1='6' x2='18' y2='18'/></svg>
+      </a></li>
+      <li><a href="#benefits">Benefits</a></li>
+      <li><a href="#ingredients">Ingredients</a></li>
+      <li><a href="#products">Products</a></li>
+      <li><a href="#recipes">Recipes</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#order">Order Now</a></li>
+    </ul>
+    <ul>
+      <li class="hideOnMobile"><a href="#home"> <img src="picture/logo.jpeg" alt=""></a></li>
+      <li class="hideOnMobile"><a href="#benefits">Benefits</a></li>
+      <li class="hideOnMobile"><a href="#ingredients">Ingredients</a></li>
+      <li class="hideOnMobile"><a href="#products">Products</a></li>
+      <li class="hideOnMobile"><a href="#recipes">Recipes</a></li>
+      <li class="hideOnMobile"><a href="#contact">Contact</a></li>
+      <li class="hideOnMobile"><a href="#order">Order Now</a></li>
+      <li class="menu-button" onclick="showSidebar()"><a href="#"><svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><line x1='3' y1='6' x2='21' y2='6'/><line x1='3' y1='12' x2='21' y2='12'/><line x1='3' y1='18' x2='21' y2='18'/></svg>
+      </a></li>
+    </ul>
+  </nav>
+  <!--xxxxxxxxxxxxxxxxxxxx TASK BAR/NAV BAR XXXXXXXXXXXXXXXXXXX-->
+    <!--=++= HERO SECTION =++=-->
+    <div class="hero-sec">
+      <div class="hero-sec-1">
+        <h1 class="vipa-name">VIPA</h1>
+        <p class="vipa-dis">Packed with Generations of Care</p>
+        <p class="vipa-dis-tamil">தலைமுறைகள் தொடர்ந்த அக்கறையுடன்</p>
+        <button class="vipa-button" href="#products">VIEW PRODUCTS</button>
+        <button class="vipa-button-1">ORDER NOW</button>
+        <div class="vipa-span">
+          <span class="green-dot">&#x25CF </span>Made in India
+          <span class="yellow-dot">&#x25CF</span> 100% Natural
+          <span class="green-dot">&#x25CF </span>No Preservatives 
+        </div>
+        
+        <div class="social-icons">
+          <!-- Replace 'yourusername' with your actual Instagram username -->
+          <a href="https://www.instagram.com/vipahealthylife_official__2025/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="instagramGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#f09433" stop-opacity="1"/>
+                  <stop offset="25%" stop-color="#e6683c" stop-opacity="1"/>
+                  <stop offset="50%" stop-color="#dc2743" stop-opacity="1"/>
+                  <stop offset="75%" stop-color="#cc2366" stop-opacity="1"/>
+                  <stop offset="100%" stop-color="#bc1888" stop-opacity="1"/>
+                </linearGradient>
+              </defs>
+              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" fill="url(#instagramGrad1)"/>
+            </svg>
+          </a>
+          <a href="https://wa.me/918144730915" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="#25D366" xmlns="http://www.w3.org/2000/svg">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+            </svg>
+          </a>
+          <!-- Replace with your YouTube channel URL (format: https://www.youtube.com/@channelname or https://www.youtube.com/c/channelname) -->
+          <a href="https://www.youtube.com/@vipahealthyfoods" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="#FF0000" xmlns="http://www.w3.org/2000/svg">
+              <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="hero-sec-2">
+        <img class="img1" src="pictures/right2.jpeg" alt="">
+        <img class="img2" src="pictures/right3.jpeg" alt="">
+      </div>
+    </div>
+    
+    <!--=++= HERO SECTION ENDS HERE =++=-->
+  <!--xxxxxxxxxxxxxxxxxxxx HEALTH BENEFITS XXXXXXXXXXXXXXXXXXX-->
   <section id="benefits">
     <div class="flex-3">
       <h1 class="health-benefits">Health Benefits</h1>
@@ -69,7 +98,8 @@
         <p>Rich in iron and B12 to support healthy blood circulation and prevent anemia</p>
       </div>
       <div class="grid-1">
-        <img alt="" src="pictures/immunity.png">
+        <svg xmlns='http://www.w3.org/2000/svg' width='64' height='64' fill="green" viewBox='0 -960 960 960' fill='currentColor'><path d='M480-80q-74-18-135.5-60.5T240-244q-43-61-61.5-132T160-520v-200l320-120 320 120v200q0 73-18.5 144T720-244q-43 61-104.5 103.5T480-80ZM440-300h80v-100h100v-80H520v-100h-80v100H340v80h100v100Z'/></svg>
+
         <h6>Boosts Immunity</h6>
         <p>Packed with antioxidants and vitamins to strengthen your immune system</p>
       </div>
@@ -108,8 +138,8 @@
       </div>
     </div>
   </section>
-  <!--=++= BENEFITS SECTION ENDS HERE=++=-->
-  <!--=++= INGREDIANS SECTION ENDS HERE=++=-->
+  <!--xxxxxxxxxxxxxxxxxxxx HEALTH BENEFITS XXXXXXXXXXXXXXXXXXX-->
+  <!--xxxxxxxxxxxxxxxxxxxx INGREDIENTS XXXXXXXXXXXXXXXXXXX-->
   <section id="ingredients">
     <div class="flex-7">
       <h2 class="Natural">Natural Ingredients</h2>
@@ -168,8 +198,12 @@
     </div>
     </div>
   </section>
+  <!--xxxxxxxxxxxxxxxxxxxx INGREDIENTS XXXXXXXXXXXXXXXXXXX-->
   
-  <!--=++= INGREDIANS SECTION ENDS HERE=++=-->
+
+
+
+
   <!--=++= TRADITIONAL RECIPIES SECTION ENDS HERE=++=-->
   <section id="recipes">
     <div class="recipe-flex">
@@ -234,10 +268,7 @@
       </div>
     </div>
   </section>
-  
-  
 
-  <!-- PRODUCT INFO / ORDER -->
   <section id="product">
     <div class="wrap">
       <div class="section-title">Product Information</div>
@@ -255,7 +286,7 @@
             <div class="left">
               <div class="muted">Net Weight</div>
             </div>
-            <div class="value">250g</div>
+            <div class="value" id="netWeight">250g</div>
           </div>
   
           <div class="row">
@@ -263,16 +294,18 @@
               <div class="muted">Available Sizes</div>
             </div>
             <div class="sizes">
-              <button class="size-btn">100g</button>
-              <button class="size-btn active">250g</button>
+              <button class="size-btn" onclick="updatePrice('100g', 40)">100g</button>
+              <button class="size-btn active" onclick="updatePrice('250g', 100)">250g</button>
+              <button class="size-btn" onclick="updatePrice('500g', 200)">500g</button>
+              <button class="size-btn" onclick="updatePrice('1kg', 400)">1kg</button>
             </div>
           </div>
   
           <div class="row">
             <div class="left">
-              <div class="muted">MRP (250g)</div>
+              <div class="muted">MRP (<span id="mrpSize">250g</span>)</div>
             </div>
-            <div class="price">₹ 40.00</div>
+            <div class="price" id="productPrice">₹ 100.00</div>
           </div>
   
           <div class="row no-border">
@@ -386,6 +419,8 @@
       <p>This product is not intended to diagnose, treat, cure, or prevent any disease. Please consult your healthcare provider before use.</p>
     </div>
   </footer>
+  
 
+  <script src="script.js"></script>
 </body>
 </html>
