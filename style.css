@@ -79,11 +79,15 @@ nav li:first-child{
 .sidebar a{
   width: 100%;
 }
+.menu-button{
+  display: none;
+}
 
 /*==================main section===================*/
 .hero-sec{
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-evenly;
   margin-top: 45px;
 }
@@ -136,7 +140,7 @@ nav li:first-child{
   font-weight: 450;
   border: none;
   border-radius: 30px;
-  margin-top: 20px;
+  margin-top: 10px;
   margin-left: 15px;
   cursor: pointer;
   transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
@@ -153,6 +157,7 @@ nav li:first-child{
 .hero-sec-2{
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
 }
 .hero-sec-2 img{
   width: 440px;
@@ -344,6 +349,7 @@ nav li:first-child{
 .flex-8{
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   gap: 3rem;
   justify-content: space-evenly;
   margin: 50px 20px;
@@ -581,7 +587,24 @@ nav li:first-child{
 
 
 
-
+@media(max-width:1200px){
+  .vipa-name{
+    font-size:80px ;
+  }
+  .vipa-dis{
+    font-size:28px ;
+  }
+  .vipa-dis-tamil{
+    font-size: 22px;
+  }
+  .hero-sec-2 img{
+    width: 410px ;
+    height: 270px;
+  }
+  .vipa-button,.vipa-button-1 {
+    font-size: 15px;
+  }
+}
 /* responsive */
 @media(max-width:990px){
   .hero-sec{
@@ -590,28 +613,37 @@ nav li:first-child{
   }
   .hero-sec-1{
     align-items: center;
+    text-align: center;
+  }
+  .social-icons{
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
   }
   .hero-sec-2{
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: center;
   }
   .img1{
-    margin-right: 10px;
+    margin-right: 15px;
+    margin-bottom: 0px;
     align-items: center;
   }
   .img2{
-    margin:0px;
+    
     align-items: center;
   }
   .vipa-name{
-    font-size: 80px;
+    font-size: 70px;
   }
   .vipa-dis{
-    font-size: 30px;
+    font-size: 26px;
   }
-  .vipa-button{
+  .vipa-button,.vipa-button-1{
     margin-bottom: 20px;
-    font-size: 19px;
+    font-size: 13px;
   }
 }
 
@@ -620,7 +652,10 @@ nav li:first-child{
 
 @media (max-width:860px){
   .cards { grid-template-columns: 1fr; }
-  .wrap { padding:0 14px; }
+  .wrap {
+    padding:0 14px;
+    
+  }
 }
 /*Senders Details*/
 .Talk-to-me{
@@ -639,6 +674,7 @@ nav li:first-child{
 .lets-connect{
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   gap: 100px;
   justify-content: center;
   margin-bottom: 90px;
@@ -852,11 +888,7 @@ nav li:first-child{
 
 
 
-@media (max-width:800px){
-  .hideOnMobile{
-    display: none;
-  }
-}
+
 
 /* Fix for elements shifting right at ~770px */
 @media (max-width: 900px) {
@@ -867,7 +899,14 @@ nav li:first-child{
     gap: 50px;
   }
 }
-
+@media (max-width:880px){
+  .hideOnMobile{
+    display: none;
+  }
+  .menu-button{
+    display: block;
+  }
+}
 @media (max-width: 850px) {
   .flex-ing {
     margin: 50px 20px;
@@ -881,12 +920,20 @@ nav li:first-child{
     width: 100%;
     max-width: 100%;
   }
+  .hero-sec-2 {
+    display: flex;
+    flex-direction: column;
+    
+  }
+  .img1{
+    margin-right: 0px;
+    margin-bottom: 12px;
+  }
 }
 /* ====== Mobile adjustments - paste at the END of style.css ====== */
 @media (max-width: 768px) {
 
-
-  /* HERO: stack and reduce font sizes + remove big left padding */
+  
   .flex-1 { 
     flex-direction: column;
     align-items: center;
@@ -898,10 +945,6 @@ nav li:first-child{
     padding-top: 22px;
     padding-bottom: 8px;
   }
-  .hero-name { font-size: clamp(1.6rem, 7vw, 2.2rem); text-align:center; }
-  .hero-dis { font-size: clamp(1rem, 4vw, 1.15rem); text-align:center; }
-  .hero-dis-tam { font-size: 0.95rem; text-align:center; color: var(--primary-dark); }
-  .hero-ing { font-size: 0.95rem; max-width: 92%; margin: 0 auto; color: #111; }
 
   /* hero image sizing */
   .hero-img { width: 84%; max-width: 360px; margin: 6px auto 0; }
